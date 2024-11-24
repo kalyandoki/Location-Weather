@@ -1,102 +1,144 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&display=swap");
 
 body {
-  font-family: 'Raleway', sans-serif;
-  background: #e0e0e0;
-  color: #707070;
-  margin: 0;
   padding: 0;
+  margin: 0;
+  background: #000;
+  font-family: sans-serif;
 }
 
 .container {
-  max-width: 400px;
-  min-width: 400px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70px;
+  width: 200px;
+  background-color: rgb(255, 255, 255);
+  padding: 12px;
+  border-radius: 6px;
+}
+
+.card h2 {
+  font-weight: bolder;
+}
+
+.inputBox {
+  width: 50%;
+  padding: 12px;
+  background: #d5d4d4;
+  border-radius: 8px;
+  border: none;
+}
+
+.btnSearch {
+  color: #fff;
+  width: 30%;
+  padding: 12px;
+  background: rgb(237, 86, 11);
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+
+.btnSearch:hover {
+  background: rgb(182, 75, 21);
+}
+
+.titleCard {
+  padding: 12px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .title {
-  font-weight: 700;
-  font-size: 50px;
+  text-align: center;
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0;
 }
 
-.form-rounded {
-  border-radius: 2em;
+.title span {
+  color: #2e8cea;
 }
 
-.back-card {
-  border-radius: 40px !important;
+.desc {
+  text-align: center;
+  color: #b3b3b3;
+  letter-spacing: 2px;
+  line-height: 22px;
 }
 
-.city-name {
-  position: absolute;
-  width: 100%;
+/* Output from web  */
+
+.output {
+  visibility: hidden;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  margin-top: 20px;
+  color: #ffffff;
+  background: #043566;
+  border-radius: 4px;
 }
 
-.city-name p {
-  font-size: 16pt;
-  font-weight: 400;
+.tempCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: self-start;
+  font-size: 24px;
+  font-weight: bold;
 }
 
-.city-name span {
-  font-weight: 400;
-  font-size: 36pt;
-  font-family: 'Times New Roman', Times, serif;
-  position: relative;
-  top: -60px;
+#temp {
+  margin: 0;
+  font-size: 72px;
 }
 
-.temp span {
-  font-weight: 100;
-  font-size: 5em;
-  letter-spacing: -5px;
-  white-space: nowrap;
-}
-.card-mid {
-  line-height: 0.5;
+#sup {
+  color: #fff;
 }
 
-.condition {
-  line-height: 1em;
-  font-weight: 700;
-  font-size: 1em;
-  text-transform: capitalize;
-}
-.high::before {
-  content: '';
-  background: url('img/up.svg') no-repeat;
-  width: 10px;
-  height: 15px;
-  display: inline-block;
-  position: relative;
-  top: 3px;
+#loc-time {
+  font-style: italic;
+  font-size: 16px;
+  letter-spacing: 2px;
 }
 
-.low::before {
-  content: '';
-  background: url('img/down.svg') no-repeat;
-  width: 10px;
-  height: 15px;
-  display: inline-block;
-  position: relative;
-  top: 3px;
-}
-.icon-container {
-  border-radius: 100%;
-  width: 100px;
-  height: 100px;
-  background: #202020;
-}
-.icon-container img {
-  margin: auto;
+.cityNameCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
-.card-bottom {
-  line-height: 0.5;
+#city-name {
+  font-size: 16px;
+  color: #ffffff;
+  padding: 14px;
 }
-.card-bottom span {
+
+#countryName {
+  background: #ec7805;
   font-size: 12px;
-}
-.card-bottom p {
-  font-size: 50px;
-  font-weight: 100;
-  letter-spacing: -2px;
+  padding: 4px 10px;
+  border-radius: 10px;
+  text-align: center;
 }
